@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -19,7 +22,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component'; 
 import { RouterModule, Routes } from '@angular/router';
 
-//PROBANDO RUTEAR GUIADO DE UN VIDEO DE YOUTUBE DE PÍLDORAS INFOORMÁTICAS
+//PROBANDO RUTEAR GUIADO DE UN VIDEO DE YOUTUBE DE PÍLDORAS INFORMÁTICAS
 
 const appRoutes: Routes= [
 {path:'', component:HomeComponent}, 
@@ -50,11 +53,14 @@ const appRoutes: Routes= [
 
   ],
   imports: [
+    ReactiveFormsModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}), 
     HttpClientModule,
-    RouterModule.forRoot(appRoutes) 
+    RouterModule.forRoot(appRoutes)
+
 
   ],
   providers: [],
