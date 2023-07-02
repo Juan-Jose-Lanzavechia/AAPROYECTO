@@ -12,7 +12,8 @@
                 <a href=""><img src="../../../assets/instagram.png" id="instagram"></a>
                 <a href=""><img src="../../../assets/github.png" id="github"></a>
                 <a href=""><img src="../../../assets/facebook.png" id="facebook"></a>
-                <button type="button" class="btn btn-secondary" (click)="login()">Ingresar</button>
+                <button type="button" class="btn btn-secondary" (click)="login()" *ngIf="!isLogged">Ingresar</button> <!--Si el método isLogged es falso, es decir, si no estamos logueados, nos logueamos-->
+                <button type="button" class="btn btn-secondary" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesión</button>
             </div> 
         </div>
     </div>

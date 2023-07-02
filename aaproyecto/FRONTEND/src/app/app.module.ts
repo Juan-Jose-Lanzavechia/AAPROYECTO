@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component'; 
 import { RouterModule, Routes } from '@angular/router';
+import { interceptorProvider } from './service/interceptor-service';
 
 //PROBANDO RUTEAR GUIADO DE UN VIDEO DE YOUTUBE DE PÍLDORAS INFORMÁTICAS
 
@@ -63,7 +64,9 @@ const appRoutes: Routes= [
 
 
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
