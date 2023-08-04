@@ -5,6 +5,11 @@ div{
   background-color: rgba(171, 130, 90, 0.745);
     text-align: center;  
 }
+/*Color de Full Stack*/
+.color{
+    color:darkblue;
+    font-size: 25px;
+}
 /*Estilo de foto de perfil*/
 @media(min-width:576px) {
 #fotoperfil{

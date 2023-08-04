@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -22,6 +21,10 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component'; 
 import { RouterModule, Routes } from '@angular/router';
 import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion.component';
 
 //PROBANDO RUTEAR GUIADO DE UN VIDEO DE YOUTUBE DE PÍLDORAS INFORMÁTICAS
 
@@ -50,8 +53,10 @@ const appRoutes: Routes= [
     FooterComponent,
     HomeComponent,
     LoginComponent,
-    
-
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
   ],
   imports: [
     ReactiveFormsModule,
