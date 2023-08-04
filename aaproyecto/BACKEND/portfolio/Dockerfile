@@ -1,6 +1,4 @@
-FROM amazoncorretto:17.0.8+7-alpine-jdk
-MAINTAINER juanjo
-COPY target/portfolio-0.0.1-SNAPSHOT.jar jj-portfolio.jar
-ENTRYPOINT["java","-jar","/jj-portfolio.jar"]
-
+FROM amazoncorretto:8-alpine-jdk
+COPY target/portfolio-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
 
